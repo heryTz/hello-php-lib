@@ -1,16 +1,28 @@
 {
-    "name": "herytz/hello-php-lib",
-    "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Herytz\\HelloPhpLib\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "Hery Nirintsoa",
-            "email": "hery.rakotoariniaina@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "herytz/hello-php-lib",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Herytz\\HelloPhpLib\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Herytz\\HelloPhpLib\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Hery Nirintsoa",
+      "email": "hery.rakotoariniaina@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "pestphp/pest": "^2.34"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
 }
